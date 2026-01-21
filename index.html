@@ -1,0 +1,1236 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mariam AI - حلول الذكاء الاصطناعي المتقدمة</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="bg-gradient-to-br from-purple-50 via-pink-50 to-blue-50">
+    <!-- Navigation -->
+    <nav class="bg-white shadow-lg sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="flex justify-between items-center py-4">
+                <div class="flex items-center space-x-reverse space-x-3">
+                    <div class="bg-gradient-to-r from-purple-600 to-pink-600 p-2 rounded-lg">
+                        <i class="fas fa-brain text-white text-xl"></i>
+                    </div>
+                    <h1 class="text-2xl font-bold bg-gradient-to-r from-purple-600 to-pink-600 bg-clip-text text-transparent">Mariam AI</h1>
+                </div>
+                <div class="hidden md:flex items-center space-x-reverse space-x-6">
+                    <a href="#services" class="text-gray-700 hover:text-purple-600 transition">الخدمات</a>
+                    <a href="#calculator" class="text-gray-700 hover:text-purple-600 transition">حاسبة الأسعار</a>
+                    <a href="#portfolio" class="text-gray-700 hover:text-purple-600 transition">معرض الأعمال</a>
+                    <a href="#booking" class="text-gray-700 hover:text-purple-600 transition">حجز موعد</a>
+                    <a href="#pricing" class="text-gray-700 hover:text-purple-600 transition">الأسعار</a>
+                    <a href="#contact" class="text-gray-700 hover:text-purple-600 transition">تواصل معنا</a>
+                    <a href="#reviews" class="text-gray-700 hover:text-purple-600 transition">تقييمات</a>
+                </div>
+                <button id="mobileMenuBtn" class="md:hidden text-gray-700">
+                    <i class="fas fa-bars text-xl"></i>
+                </button>
+            </div>
+        </div>
+        <!-- Mobile Menu -->
+        <div id="mobileMenu" class="hidden md:hidden bg-white border-t">
+            <div class="px-4 py-2 space-y-2">
+                <a href="#services" class="block py-2 text-gray-700 hover:text-purple-600">الخدمات</a>
+                <a href="#calculator" class="block py-2 text-gray-700 hover:text-purple-600">حاسبة الأسعار</a>
+                <a href="#portfolio" class="block py-2 text-gray-700 hover:text-purple-600">معرض الأعمال</a>
+                <a href="#booking" class="block py-2 text-gray-700 hover:text-purple-600">حجز موعد</a>
+                <a href="#pricing" class="block py-2 text-gray-700 hover:text-purple-600">الأسعار</a>
+                <a href="#contact" class="block py-2 text-gray-700 hover:text-purple-600">تواصل معنا</a>
+                <a href="#reviews" class="block py-2 text-gray-700 hover:text-purple-600">تقييمات</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="py-20 px-4">
+        <div class="max-w-7xl mx-auto text-center">
+            <div class="mb-8">
+                <div class="inline-block bg-gradient-to-r from-purple-600 to-pink-600 p-4 rounded-full mb-6">
+                    <i class="fas fa-robot text-white text-4xl"></i>
+                </div>
+                <h1 class="text-5xl md:text-6xl font-bold mb-6">
+                    <span class="bg-gradient-to-r from-purple-600 to-pink-600 bg-clip-text text-transparent">Mariam AI</span>
+                </h1>
+                <p class="text-xl md:text-2xl text-gray-700 mb-8">حلول الذكاء الاصطناعي المبتكرة لأعمالك</p>
+            </div>
+            <div class="flex flex-col md:flex-row gap-4 justify-center">
+                <a href="#services" class="bg-gradient-to-r from-purple-600 to-pink-600 text-white px-8 py-4 rounded-lg hover:shadow-lg transition transform hover:scale-105">
+                    <i class="fas fa-rocket ml-2"></i>استكشف خدماتنا
+                </a>
+                <a href="#contact" class="bg-white text-purple-600 border-2 border-purple-600 px-8 py-4 rounded-lg hover:bg-purple-50 transition">
+                    <i class="fas fa-envelope ml-2"></i>تواصل معنا
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="py-20 px-4 bg-white bg-opacity-50">
+        <div class="max-w-7xl mx-auto">
+            <h2 class="text-4xl font-bold text-center mb-16">
+                <span class="bg-gradient-to-r from-purple-600 to-pink-600 bg-clip-text text-transparent">خدماتنا</span>
+            </h2>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- AI Workshops -->
+                <div class="service-card bg-white rounded-2xl shadow-xl p-8 hover:shadow-2xl transition transform hover:scale-5">
+                    <div class="bg-gradient-to-r from-blue-500 to-purple-500 p-4 rounded-full w-16 h-16 flex items-center justify-center mb-6">
+                        <i class="fas fa-chalkboard-teacher text-white text-2xl"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold mb-4">ورش عمل AI</h3>
+                    <p class="text-gray-600 mb-6">تعلم أساسيات الذكاء الاصطناعي وتطبيقاته العملية</p>
+                    <ul class="space-y-3 mb-6">
+                        <li class="flex items-center text-gray-700">
+                            <i class="fas fa-check-circle text-green-500 ml-2"></i>
+                            تدريبات عملية وأمثلة حية
+                        </li>
+                        <li class="flex items-center text-gray-700">
+                            <i class="fas fa-check-circle text-green-500 ml-2"></i>
+                            دعم ومتابعة بعد الورشة
+                        </li>
+                        <li class="flex items-center text-gray-700">
+                            <i class="fas fa-check-circle text-green-500 ml-2"></i>
+                            مستوى تمهيدي ومتوسط
+                        </li>
+                    </ul>
+                    <div class="text-center">
+                        <div class="text-3xl font-bold text-purple-600 mb-2">800 جنيه</div>
+                        <div class="text-sm text-gray-500">دفع 200 جنيه أسبوعياً</div>
+                    </div>
+                </div>
+
+                <!-- AI Consulting -->
+                <div class="service-card bg-white rounded-2xl shadow-xl p-8 hover:shadow-2xl transition transform hover:scale-5">
+                    <div class="bg-gradient-to-r from-green-500 to-blue-500 p-4 rounded-full w-16 h-16 flex items-center justify-center mb-6">
+                        <i class="fas fa-briefcase text-white text-2xl"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold mb-4">استشارات AI للأعمال</h3>
+                    <p class="text-gray-600 mb-6">استراتيجيات وحلول ذكاء اصطناعي متخصصة</p>
+                    <ul class="space-y-3 mb-6">
+                        <li class="flex items-center text-gray-700">
+                            <i class="fas fa-check-circle text-green-500 ml-2"></i>
+                            استراتيجيات AI
+                        </li>
+                        <li class="flex items-center text-gray-700">
+                            <i class="fas fa-check-circle text-green-500 ml-2"></i>
+                            تحليل البيانات
+                        </li>
+                        <li class="flex items-center text-gray-700">
+                            <i class="fas fa-check-circle text-green-500 ml-2"></i>
+                            تحسين العمليات
+                        </li>
+                    </ul>
+                    <div class="text-center">
+                        <div class="text-3xl font-bold text-purple-600 mb-2">600-1200 جنيه</div>
+                        <div class="text-sm text-gray-500">للساعة الواحدة</div>
+                    </div>
+                </div>
+
+                <!-- PowerPoint Templates -->
+                <div class="service-card bg-white rounded-2xl shadow-xl p-8 hover:shadow-2xl transition transform hover:scale-5">
+                    <div class="bg-gradient-to-r from-pink-500 to-orange-500 p-4 rounded-full w-16 h-16 flex items-center justify-center mb-6">
+                        <i class="fas fa-presentation text-white text-2xl"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold mb-4">قوالب بوربوينت</h3>
+                    <p class="text-gray-600 mb-6">تصاميم احترافية قابلة للتعديل</p>
+                    <ul class="space-y-3 mb-6">
+                        <li class="flex items-center text-gray-700">
+                            <i class="fas fa-check-circle text-green-500 ml-2"></i>
+                            أساسي: 5-6 سلايدات (1000 جنيه)
+                        </li>
+                        <li class="flex items-center text-gray-700">
+                            <i class="fas fa-check-circle text-green-500 ml-2"></i>
+                            متوسط: 10-12 سلايد (2000 جنيه)
+                        </li>
+                        <li class="flex items-center text-gray-700">
+                            <i class="fas fa-check-circle text-green-500 ml-2"></i>
+                            متقدم: 15-20 سلايد (3500 جنيه)
+                        </li>
+                    </ul>
+                    <div class="text-center">
+                        <div class="text-3xl font-bold text-purple-600 mb-2">ابدأ من 1000 جنيه</div>
+                        <div class="text-sm text-gray-500">قابل للتعديل بالكامل</div>
+                    </div>
+                </div>
+
+                <!-- Data Analysis -->
+                <div class="service-card bg-white rounded-2xl shadow-xl p-8 hover:shadow-2xl transition transform hover:scale-5">
+                    <div class="bg-gradient-to-r from-yellow-500 to-red-500 p-4 rounded-full w-16 h-16 flex items-center justify-center mb-6">
+                        <i class="fas fa-chart-line text-white text-2xl"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold mb-4">رؤى & تحليل بيانات</h3>
+                    <p class="text-gray-600 mb-6">تحليل متقدم ولوحات تحكم تفاعلية</p>
+                    <ul class="space-y-3 mb-6">
+                        <li class="flex items-center text-gray-700">
+                            <i class="fas fa-check-circle text-green-500 ml-2"></i>
+                            تقارير تحليلية (5-10 صفحات)
+                        </li>
+                        <li class="flex items-center text-gray-700">
+                            <i class="fas fa-check-circle text-green-500 ml-2"></i>
+                            Dashboard تفاعلي
+                        </li>
+                        <li class="flex items-center text-gray-700">
+                            <i class="fas fa-check-circle text-green-500 ml-2"></i>
+                            رؤى قابلة للتنفيذ
+                        </li>
+                    </ul>
+                    <div class="text-center">
+                        <div class="text-3xl font-bold text-purple-600 mb-2">2000-10000 جنيه</div>
+                        <div class="text-sm text-gray-500">حسب التعقيد</div>
+                    </div>
+                </div>
+
+                <!-- Program Design -->
+                <div class="service-card bg-white rounded-2xl shadow-xl p-8 hover:shadow-2xl transition transform hover:scale-5">
+                    <div class="bg-gradient-to-r from-indigo-500 to-purple-500 p-4 rounded-full w-16 h-16 flex items-center justify-center mb-6">
+                        <i class="fas fa-code text-white text-2xl"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold mb-4">تصميم برامج</h3>
+                    <p class="text-gray-600 mb-6">حلول برمجية مخصصة وحل مشاكل</p>
+                    <ul class="space-y-3 mb-6">
+                        <li class="flex items-center text-gray-700">
+                            <i class="fas fa-check-circle text-green-500 ml-2"></i>
+                            تصميم أدوات مخصصة
+                        </li>
+                        <li class="flex items-center text-gray-700">
+                            <i class="fas fa-check-circle text-green-500 ml-2"></i>
+                            حل مشاكل برمجية
+                        </li>
+                        <li class="flex items-center text-gray-700">
+                            <i class="fas fa-check-circle text-green-500 ml-2"></i>
+                            تحسين الأداء
+                        </li>
+                    </ul>
+                    <div class="text-center">
+                        <div class="text-3xl font-bold text-purple-600 mb-2">1500-7000 جنيه</div>
+                        <div class="text-sm text-gray-500">حسب المشروع</div>
+                    </div>
+                </div>
+
+                <!-- Monthly Package -->
+                <div class="service-card bg-gradient-to-r from-purple-600 to-pink-600 rounded-2xl shadow-xl p-8 hover:shadow-2xl transition transform hover:scale-5 text-white">
+                    <div class="bg-white bg-opacity-20 p-4 rounded-full w-16 h-16 flex items-center justify-center mb-6">
+                        <i class="fas fa-crown text-white text-2xl"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold mb-4">باقة شهرية للشركات</h3>
+                    <p class="text-purple-100 mb-6">حلول متكاملة للشركات</p>
+                    <ul class="space-y-3 mb-6">
+                        <li class="flex items-center">
+                            <i class="fas fa-star text-yellow-300 ml-2"></i>
+                            استشارات غير محدودة
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-star text-yellow-300 ml-2"></i>
+                            تحليل بيانات مستمر
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-star text-yellow-300 ml-2"></i>
+                            دعم فني 24/7
+                        </li>
+                    </ul>
+                    <div class="text-center">
+                        <div class="text-3xl font-bold mb-2">8000-15000 جنيه</div>
+                        <div class="text-sm text-purple-100">شهرياً</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Service Calculator Section -->
+    <section id="calculator" class="py-20 px-4 bg-white bg-opacity-50">
+        <div class="max-w-4xl mx-auto">
+            <h2 class="text-4xl font-bold text-center mb-16">
+                <span class="bg-gradient-to-r from-purple-600 to-pink-600 bg-clip-text text-transparent">حاسبة الأسعار</span>
+            </h2>
+            
+            <div class="bg-white rounded-2xl shadow-xl p-8">
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                    <div>
+                        <h3 class="text-xl font-bold mb-6">اختر الخدمة</h3>
+                        <div class="space-y-3">
+                            <label class="flex items-center p-3 border rounded-lg cursor-pointer hover:bg-purple-50 transition">
+                                <input type="radio" name="service" value="workshop" class="ml-3" data-base-price="800">
+                                <div>
+                                    <div class="font-semibold">ورش عمل AI</div>
+                                    <div class="text-sm text-gray-600">تعلم أساسيات الذكاء الاصطناعي</div>
+                                </div>
+                            </label>
+                            <label class="flex items-center p-3 border rounded-lg cursor-pointer hover:bg-purple-50 transition">
+                                <input type="radio" name="service" value="consulting" class="ml-3" data-base-price="600">
+                                <div>
+                                    <div class="font-semibold">استشارات AI</div>
+                                    <div class="text-sm text-gray-600">للساعة الواحدة</div>
+                                </div>
+                            </label>
+                            <label class="flex items-center p-3 border rounded-lg cursor-pointer hover:bg-purple-50 transition">
+                                <input type="radio" name="service" value="templates" class="ml-3" data-base-price="1000">
+                                <div>
+                                    <div class="font-semibold">قوالب بوربوينت</div>
+                                    <div class="text-sm text-gray-600">ابدأ من 1000 جنيه</div>
+                                </div>
+                            </label>
+                            <label class="flex items-center p-3 border rounded-lg cursor-pointer hover:bg-purple-50 transition">
+                                <input type="radio" name="service" value="analysis" class="ml-3" data-base-price="2000">
+                                <div>
+                                    <div class="font-semibold">تحليل بيانات</div>
+                                    <div class="text-sm text-gray-600">تقارير ولوحات تحكم</div>
+                                </div>
+                            </label>
+                            <label class="flex items-center p-3 border rounded-lg cursor-pointer hover:bg-purple-50 transition">
+                                <input type="radio" name="service" value="programming" class="ml-3" data-base-price="1500">
+                                <div>
+                                    <div class="font-semibold">تصميم برامج</div>
+                                    <div class="text-sm text-gray-600">حلول برمجية مخصصة</div>
+                                </div>
+                            </label>
+                        </div>
+                    </div>
+                    
+                    <div>
+                        <h3 class="text-xl font-bold mb-6">تفاصيل المشروع</h3>
+                        <div class="space-y-4">
+                            <div>
+                                <label class="block text-sm font-medium mb-2">حجم المشروع</label>
+                                <select id="projectSize" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-purple-500">
+                                    <option value="1">صغير (x1)</option>
+                                    <option value="1.5">متوسط (x1.5)</option>
+                                    <option value="2">كبير (x2)</option>
+                                    <option value="3">ضخم (x3)</option>
+                                </select>
+                            </div>
+                            
+                            <div>
+                                <label class="block text-sm font-medium mb-2">المدة المطلوبة</label>
+                                <select id="timeline" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-purple-500">
+                                    <option value="1">عادي (أسبوعين+)</option>
+                                    <option value="1.2">سريع (أسبوع)</option>
+                                    <option value="1.5">عاجل (3-5 أيام)</option>
+                                    <option value="2">مستعجل (24-48 ساعة)</option>
+                                </select>
+                            </div>
+                            
+                            <div>
+                                <label class="block text-sm font-medium mb-2">ميزات إضافية</label>
+                                <div class="space-y-2">
+                                    <label class="flex items-center">
+                                        <input type="checkbox" id="support" value="300" class="ml-2">
+                                        <span>دعم فني لمدة شهر (+300 جنيه)</span>
+                                    </label>
+                                    <label class="flex items-center">
+                                        <input type="checkbox" id="training" value="500" class="ml-2">
+                                        <span>تدريب الفريق (+500 جنيه)</span>
+                                    </label>
+                                    <label class="flex items-center">
+                                        <input type="checkbox" id="documentation" value="200" class="ml-2">
+                                        <span>توثيق كامل (+200 جنيه)</span>
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="mt-8 p-6 bg-gradient-to-r from-purple-50 to-pink-50 rounded-xl">
+                    <div class="text-center">
+                        <div class="text-sm text-gray-600 mb-2">السعر التقديري</div>
+                        <div id="calculatedPrice" class="text-4xl font-bold text-purple-600 mb-4">0 جنيه</div>
+                        <div id="priceBreakdown" class="text-sm text-gray-600 mb-4"></div>
+                        <button id="calculateBtn" class="bg-gradient-to-r from-purple-600 to-pink-600 text-white px-8 py-3 rounded-lg hover:shadow-lg transition">
+                            <i class="fas fa-calculator ml-2"></i>احسب السعر
+                        </button>
+                        <button id="proceedBtn" class="hidden bg-green-600 text-white px-8 py-3 rounded-lg hover:shadow-lg transition mr-3">
+                            <i class="fas fa-arrow-left ml-2"></i>تواصل للحجز
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Portfolio Section -->
+    <section id="portfolio" class="py-20 px-4">
+        <div class="max-w-7xl mx-auto">
+            <h2 class="text-4xl font-bold text-center mb-16">
+                <span class="bg-gradient-to-r from-purple-600 to-pink-600 bg-clip-text text-transparent">معرض الأعمال</span>
+            </h2>
+            
+            <!-- Filter Tabs -->
+            <div class="flex justify-center mb-12">
+                <div class="bg-white rounded-full shadow-lg p-2 flex space-x-reverse space-x-2">
+                    <button class="filter-btn active px-6 py-2 rounded-full bg-purple-600 text-white transition" data-filter="all">الكل</button>
+                    <button class="filter-btn px-6 py-2 rounded-full hover:bg-purple-100 transition" data-filter="workshop">ورش عمل</button>
+                    <button class="filter-btn px-6 py-2 rounded-full hover:bg-purple-100 transition" data-filter="consulting">استشارات</button>
+                    <button class="filter-btn px-6 py-2 rounded-full hover:bg-purple-100 transition" data-filter="templates">قوالب</button>
+                    <button class="filter-btn px-6 py-2 rounded-full hover:bg-purple-100 transition" data-filter="analysis">تحليل</button>
+                </div>
+            </div>
+            
+            <!-- Portfolio Grid -->
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Workshop Project -->
+                <div class="portfolio-item" data-category="workshop">
+                    <div class="bg-white rounded-2xl shadow-xl overflow-hidden hover:shadow-2xl transition">
+                        <div class="relative h-48 bg-gradient-to-br from-blue-400 to-purple-600">
+                            <div class="absolute inset-0 flex items-center justify-center">
+                                <i class="fas fa-chalkboard-teacher text-white text-4xl"></i>
+                            </div>
+                            <div class="absolute top-4 right-4 bg-white px-3 py-1 rounded-full text-sm font-semibold">ورش عمل</div>
+                        </div>
+                        <div class="p-6">
+                            <h3 class="text-xl font-bold mb-2">ورشة عمل AI للمبتدئين</h3>
+                            <p class="text-gray-600 mb-4">تدريب عملي على أساسيات الذكاء الاصطناعي لمجموعة من 20 مشارك</p>
+                            <div class="flex items-center justify-between mb-4">
+                                <span class="text-purple-600 font-bold">800 جنيه</span>
+                                <span class="text-sm text-gray-500">يناير 2024</span>
+                            </div>
+                            <div class="flex flex-wrap gap-2">
+                                <span class="bg-purple-100 text-purple-700 px-2 py-1 rounded text-xs">AI Basics</span>
+                                <span class="bg-purple-100 text-purple-700 px-2 py-1 rounded text-xs">Hands-on</span>
+                                <span class="bg-purple-100 text-purple-700 px-2 py-1 rounded text-xs">20 مشارك</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Consulting Project -->
+                <div class="portfolio-item" data-category="consulting">
+                    <div class="bg-white rounded-2xl shadow-xl overflow-hidden hover:shadow-2xl transition">
+                        <div class="relative h-48 bg-gradient-to-br from-green-400 to-blue-600">
+                            <div class="absolute inset-0 flex items-center justify-center">
+                                <i class="fas fa-briefcase text-white text-4xl"></i>
+                            </div>
+                            <div class="absolute top-4 right-4 bg-white px-3 py-1 rounded-full text-sm font-semibold">استشارات</div>
+                        </div>
+                        <div class="p-6">
+                            <h3 class="text-xl font-bold mb-2">استراتيجية AI لشركة تجارية</h3>
+                            <p class="text-gray-600 mb-4">تطوير خطة متكاملة لتبني الذكاء الاصطناعي في عمليات الشركة</p>
+                            <div class="flex items-center justify-between mb-4">
+                                <span class="text-purple-600 font-bold">5000 جنيه</span>
+                                <span class="text-sm text-gray-500">ديسمبر 2023</span>
+                            </div>
+                            <div class="flex flex-wrap gap-2">
+                                <span class="bg-green-100 text-green-700 px-2 py-1 rounded text-xs">Strategy</span>
+                                <span class="bg-green-100 text-green-700 px-2 py-1 rounded text-xs">AI Integration</span>
+                                <span class="bg-green-100 text-green-700 px-2 py-1 rounded text-xs">Business</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Templates Project -->
+                <div class="portfolio-item" data-category="templates">
+                    <div class="bg-white rounded-2xl shadow-xl overflow-hidden hover:shadow-2xl transition">
+                        <div class="relative h-48 bg-gradient-to-br from-pink-400 to-orange-600">
+                            <div class="absolute inset-0 flex items-center justify-center">
+                                <i class="fas fa-presentation text-white text-4xl"></i>
+                            </div>
+                            <div class="absolute top-4 right-4 bg-white px-3 py-1 rounded-full text-sm font-semibold">قوالب</div>
+                        </div>
+                        <div class="p-6">
+                            <h3 class="text-xl font-bold mb-2">قالب بوربوينت احترافي</h3>
+                            <p class="text-gray-600 mb-4">تصميم 15 سلايد احترافي لشركة تقنية</p>
+                            <div class="flex items-center justify-between mb-4">
+                                <span class="text-purple-600 font-bold">3500 جنيه</span>
+                                <span class="text-sm text-gray-500">نوفمبر 2023</span>
+                            </div>
+                            <div class="flex flex-wrap gap-2">
+                                <span class="bg-pink-100 text-pink-700 px-2 py-1 rounded text-xs">PowerPoint</span>
+                                <span class="bg-pink-100 text-pink-700 px-2 py-1 rounded text-xs">15 سلايد</span>
+                                <span class="bg-pink-100 text-pink-700 px-2 py-1 rounded text-xs">Tech</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Data Analysis Project -->
+                <div class="portfolio-item" data-category="analysis">
+                    <div class="bg-white rounded-2xl shadow-xl overflow-hidden hover:shadow-2xl transition">
+                        <div class="relative h-48 bg-gradient-to-br from-yellow-400 to-red-600">
+                            <div class="absolute inset-0 flex items-center justify-center">
+                                <i class="fas fa-chart-line text-white text-4xl"></i>
+                            </div>
+                            <div class="absolute top-4 right-4 bg-white px-3 py-1 rounded-full text-sm font-semibold">تحليل</div>
+                        </div>
+                        <div class="p-6">
+                            <h3 class="text-xl font-bold mb-2">Dashboard تحليلي متقدم</h3>
+                            <p class="text-gray-600 mb-4">لوحة تحكم تفاعلية لتحليل بيانات المبيعات</p>
+                            <div class="flex items-center justify-between mb-4">
+                                <span class="text-purple-600 font-bold">8000 جنيه</span>
+                                <span class="text-sm text-gray-500">أكتوبر 2023</span>
+                            </div>
+                            <div class="flex flex-wrap gap-2">
+                                <span class="bg-yellow-100 text-yellow-700 px-2 py-1 rounded text-xs">Dashboard</span>
+                                <span class="bg-yellow-100 text-yellow-700 px-2 py-1 rounded text-xs">Analytics</span>
+                                <span class="bg-yellow-100 text-yellow-700 px-2 py-1 rounded text-xs">Sales</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Programming Project -->
+                <div class="portfolio-item" data-category="consulting">
+                    <div class="bg-white rounded-2xl shadow-xl overflow-hidden hover:shadow-2xl transition">
+                        <div class="relative h-48 bg-gradient-to-br from-indigo-400 to-purple-600">
+                            <div class="absolute inset-0 flex items-center justify-center">
+                                <i class="fas fa-code text-white text-4xl"></i>
+                            </div>
+                            <div class="absolute top-4 right-4 bg-white px-3 py-1 rounded-full text-sm font-semibold">برمجة</div>
+                        </div>
+                        <div class="p-6">
+                            <h3 class="text-xl font-bold mb-2">نظام إدارة مخصص</h3>
+                            <p class="text-gray-600 mb-4">تطوير برنامج إدارة للمخزون والمبيعات</p>
+                            <div class="flex items-center justify-between mb-4">
+                                <span class="text-purple-600 font-bold">7000 جنيه</span>
+                                <span class="text-sm text-gray-500">سبتمبر 2023</span>
+                            </div>
+                            <div class="flex flex-wrap gap-2">
+                                <span class="bg-indigo-100 text-indigo-700 px-2 py-1 rounded text-xs">Custom App</span>
+                                <span class="bg-indigo-100 text-indigo-700 px-2 py-1 rounded text-xs">Inventory</span>
+                                <span class="bg-indigo-100 text-indigo-700 px-2 py-1 rounded text-xs">Sales</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Success Story -->
+                <div class="portfolio-item" data-category="workshop">
+                    <div class="bg-white rounded-2xl shadow-xl overflow-hidden hover:shadow-2xl transition">
+                        <div class="relative h-48 bg-gradient-to-br from-green-400 to-teal-600">
+                            <div class="absolute inset-0 flex items-center justify-center">
+                                <i class="fas fa-trophy text-white text-4xl"></i>
+                            </div>
+                            <div class="absolute top-4 right-4 bg-white px-3 py-1 rounded-full text-sm font-semibold">نجاح</div>
+                        </div>
+                        <div class="p-6">
+                            <h3 class="text-xl font-bold mb-2">قصة نجاح: شركة النمو</h3>
+                            <p class="text-gray-600 mb-4">زيادة المبيعات بنسبة 40% بعد تطبيق حلول AI</p>
+                            <div class="flex items-center justify-between mb-4">
+                                <span class="text-purple-600 font-bold">مشروع متكامل</span>
+                                <span class="text-sm text-gray-500">أغسطس 2023</span>
+                            </div>
+                            <div class="flex flex-wrap gap-2">
+                                <span class="bg-green-100 text-green-700 px-2 py-1 rounded text-xs">+40% Sales</span>
+                                <span class="bg-green-100 text-green-700 px-2 py-1 rounded text-xs">AI Solutions</span>
+                                <span class="bg-green-100 text-green-700 px-2 py-1 rounded text-xs">Success</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Load More Button -->
+            <div class="text-center mt-12">
+                <button class="bg-gradient-to-r from-purple-600 to-pink-600 text-white px-8 py-3 rounded-lg hover:shadow-lg transition">
+                    <i class="fas fa-plus ml-2"></i>عرض المزيد من المشاريع
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Appointment Booking Section -->
+    <section id="booking" class="py-20 px-4 bg-white bg-opacity-50">
+        <div class="max-w-4xl mx-auto">
+            <h2 class="text-4xl font-bold text-center mb-16">
+                <span class="bg-gradient-to-r from-purple-600 to-pink-600 bg-clip-text text-transparent">حجز موعد</span>
+            </h2>
+            
+            <div class="bg-white rounded-2xl shadow-xl p-8">
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                    <div>
+                        <h3 class="text-xl font-bold mb-6">اختر نوع الموعد</h3>
+                        <div class="space-y-3">
+                            <label class="flex items-center p-3 border rounded-lg cursor-pointer hover:bg-purple-50 transition">
+                                <input type="radio" name="appointmentType" value="consultation" class="ml-3">
+                                <div>
+                                    <div class="font-semibold">استشارة مجانية (15 دقيقة)</div>
+                                    <div class="text-sm text-gray-600">مناقشة احتياجاتك ومتطلبات المشروع</div>
+                                </div>
+                            </label>
+                            <label class="flex items-center p-3 border rounded-lg cursor-pointer hover:bg-purple-50 transition">
+                                <input type="radio" name="appointmentType" value="workshop" class="ml-3">
+                                <div>
+                                    <div class="font-semibold">ورشة عمل (2-4 ساعات)</div>
+                                    <div class="text-sm text-gray-600">تدريب عملي على الذكاء الاصطناعي</div>
+                                </div>
+                            </label>
+                            <label class="flex items-center p-3 border rounded-lg cursor-pointer hover:bg-purple-50 transition">
+                                <input type="radio" name="appointmentType" value="meeting" class="ml-3">
+                                <div>
+                                    <div class="font-semibold">اجتماع عمل (ساعة)</div>
+                                    <div class="text-sm text-gray-600">مناقشة تفصيلية للمشروع</div>
+                                </div>
+                            </label>
+                            <label class="flex items-center p-3 border rounded-lg cursor-pointer hover:bg-purple-50 transition">
+                                <input type="radio" name="appointmentType" value="followup" class="ml-3">
+                                <div>
+                                    <div class="font-semibold">متابعة (30 دقيقة)</div>
+                                    <div class="text-sm text-gray-600">متابعة تقدم المشروع</div>
+                                </div>
+                            </label>
+                        </div>
+                    </div>
+                    
+                    <div>
+                        <h3 class="text-xl font-bold mb-6">معلومات الحجز</h3>
+                        <form id="bookingForm" class="space-y-4">
+                            <input type="text" placeholder="الاسم الكامل" required
+                                   class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-purple-500">
+                            <input type="email" placeholder="البريد الإلكتروني" required
+                                   class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-purple-500">
+                            <input type="tel" placeholder="رقم الهاتف" required
+                                   class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-purple-500">
+                            <textarea placeholder="ملاحظات إضافية (اختياري)" rows="3"
+                                      class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-purple-500"></textarea>
+                        </form>
+                    </div>
+                </div>
+                
+                <!-- Calendar Section -->
+                <div class="mt-8">
+                    <h3 class="text-xl font-bold mb-6">اختر التاريخ والوقت</h3>
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                        <div>
+                            <label class="block text-sm font-medium mb-2">التاريخ</label>
+                            <input type="date" id="bookingDate" required
+                                   class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-purple-500">
+                        </div>
+                        <div>
+                            <label class="block text-sm font-medium mb-2">الوقت</label>
+                            <select id="bookingTime" required
+                                    class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-purple-500">
+                                <option value="">اختر الوقت</option>
+                                <option value="09:00">9:00 ص</option>
+                                <option value="10:00">10:00 ص</option>
+                                <option value="11:00">11:00 ص</option>
+                                <option value="12:00">12:00 م</option>
+                                <option value="13:00">1:00 م</option>
+                                <option value="14:00">2:00 م</option>
+                                <option value="15:00">3:00 م</option>
+                                <option value="16:00">4:00 م</option>
+                                <option value="17:00">5:00 م</option>
+                                <option value="18:00">6:00 م</option>
+                                <option value="19:00">7:00 م</option>
+                                <option value="20:00">8:00 م</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Available Time Slots -->
+                <div class="mt-8">
+                    <h3 class="text-lg font-semibold mb-4">الأوقات المتاحة اليوم</h3>
+                    <div class="grid grid-cols-4 md:grid-cols-6 gap-2" id="timeSlots">
+                        <button class="time-slot bg-gray-100 hover:bg-purple-100 hover:text-purple-700 px-3 py-2 rounded-lg text-sm transition">9:00</button>
+                        <button class="time-slot bg-gray-100 hover:bg-purple-100 hover:text-purple-700 px-3 py-2 rounded-lg text-sm transition">10:00</button>
+                        <button class="time-slot bg-gray-100 hover:bg-purple-100 hover:text-purple-700 px-3 py-2 rounded-lg text-sm transition">11:00</button>
+                        <button class="time-slot bg-red-100 text-red-700 px-3 py-2 rounded-lg text-sm cursor-not-allowed" disabled>12:00</button>
+                        <button class="time-slot bg-gray-100 hover:bg-purple-100 hover:text-purple-700 px-3 py-2 rounded-lg text-sm transition">1:00</button>
+                        <button class="time-slot bg-gray-100 hover:bg-purple-100 hover:text-purple-700 px-3 py-2 rounded-lg text-sm transition">2:00</button>
+                        <button class="time-slot bg-gray-100 hover:bg-purple-100 hover:text-purple-700 px-3 py-2 rounded-lg text-sm transition">3:00</button>
+                        <button class="time-slot bg-red-100 text-red-700 px-3 py-2 rounded-lg text-sm cursor-not-allowed" disabled>4:00</button>
+                        <button class="time-slot bg-gray-100 hover:bg-purple-100 hover:text-purple-700 px-3 py-2 rounded-lg text-sm transition">5:00</button>
+                        <button class="time-slot bg-gray-100 hover:bg-purple-100 hover:text-purple-700 px-3 py-2 rounded-lg text-sm transition">6:00</button>
+                        <button class="time-slot bg-gray-100 hover:bg-purple-100 hover:text-purple-700 px-3 py-2 rounded-lg text-sm transition">7:00</button>
+                        <button class="time-slot bg-gray-100 hover:bg-purple-100 hover:text-purple-700 px-3 py-2 rounded-lg text-sm transition">8:00</button>
+                    </div>
+                </div>
+                
+                <!-- Booking Summary -->
+                <div class="mt-8 p-6 bg-gradient-to-r from-purple-50 to-pink-50 rounded-xl">
+                    <h3 class="text-lg font-semibold mb-4">ملخص الحجز</h3>
+                    <div id="bookingSummary" class="space-y-2 text-sm text-gray-600">
+                        <p>يرجى اختيار نوع الموعد وتاريخ الحجز</p>
+                    </div>
+                    <div class="mt-6 flex space-x-reverse space-x-3">
+                        <button id="confirmBooking" class="bg-gradient-to-r from-purple-600 to-pink-600 text-white px-8 py-3 rounded-lg hover:shadow-lg transition">
+                            <i class="fas fa-check ml-2"></i>تأكيد الحجز
+                        </button>
+                        <button id="cancelBooking" class="bg-gray-300 text-gray-700 px-8 py-3 rounded-lg hover:bg-gray-400 transition">
+                            <i class="fas fa-times ml-2"></i>إلغاء
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Client Dashboard Section -->
+    <section id="clientDashboard" class="py-20 px-4 bg-white bg-opacity-50">
+        <div class="max-w-7xl mx-auto">
+            <h2 class="text-4xl font-bold text-center mb-16">
+                <span class="bg-gradient-to-r from-purple-600 to-pink-600 bg-clip-text text-transparent">لوحة تحكم العملاء</span>
+            </h2>
+            
+            <div class="bg-white rounded-2xl shadow-xl p-8">
+                <!-- Dashboard Header -->
+                <div class="flex items-center justify-between mb-8">
+                    <div class="flex items-center">
+                        <div class="bg-purple-100 p-3 rounded-full ml-4">
+                            <i class="fas fa-user text-purple-600 text-xl"></i>
+                        </div>
+                        <div>
+                            <h3 class="text-xl font-bold">أحمد محمد</h3>
+                            <p class="text-gray-600">عميل مميز</p>
+                        </div>
+                    </div>
+                    <div class="flex space-x-reverse space-x-3">
+                        <button class="bg-purple-600 text-white px-4 py-2 rounded-lg hover:bg-purple-700 transition">
+                            <i class="fas fa-bell ml-2"></i>الإشعارات
+                        </button>
+                        <button class="bg-gray-200 text-gray-700 px-4 py-2 rounded-lg hover:bg-gray-300 transition">
+                            <i class="fas fa-cog ml-2"></i>الإعدادات
+                        </button>
+                    </div>
+                </div>
+                
+                <!-- Stats Cards -->
+                <div class="grid grid-cols-1 md:grid-cols-4 gap-6 mb-8">
+                    <div class="bg-gradient-to-r from-blue-500 to-blue-600 text-white p-6 rounded-xl">
+                        <div class="flex items-center justify-between mb-4">
+                            <i class="fas fa-project-diagram text-3xl opacity-80"></i>
+                            <span class="text-2xl font-bold">5</span>
+                        </div>
+                        <p class="text-sm opacity-90">المشاريع النشطة</p>
+                    </div>
+                    <div class="bg-gradient-to-r from-green-500 to-green-600 text-white p-6 rounded-xl">
+                        <div class="flex items-center justify-between mb-4">
+                            <i class="fas fa-check-circle text-3xl opacity-80"></i>
+                            <span class="text-2xl font-bold">12</span>
+                        </div>
+                        <p class="text-sm opacity-90">المشاريع المكتملة</p>
+                    </div>
+                    <div class="bg-gradient-to-r from-purple-500 to-purple-600 text-white p-6 rounded-xl">
+                        <div class="flex items-center justify-between mb-4">
+                            <i class="fas fa-clock text-3xl opacity-80"></i>
+                            <span class="text-2xl font-bold">48</span>
+                        </div>
+                        <p class="text-sm opacity-90">ساعة العمل</p>
+                    </div>
+                    <div class="bg-gradient-to-r from-orange-500 to-orange-600 text-white p-6 rounded-xl">
+                        <div class="flex items-center justify-between mb-4">
+                            <i class="fas fa-file-alt text-3xl opacity-80"></i>
+                            <span class="text-2xl font-bold">24</span>
+                        </div>
+                        <p class="text-sm opacity-90">الملفات المشتركة</p>
+                    </div>
+                </div>
+                
+                <!-- Project List -->
+                <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
+                    <div>
+                        <h3 class="text-xl font-bold mb-6">المشاريع الحالية</h3>
+                        <div class="space-y-4">
+                            <div class="border rounded-lg p-4 hover:bg-gray-50 transition">
+                                <div class="flex items-center justify-between mb-2">
+                                    <h4 class="font-semibold">Dashboard تحليلي متقدم</h4>
+                                    <span class="bg-green-100 text-green-700 px-2 py-1 rounded text-xs">قيد التنفيذ</span>
+                                </div>
+                                <p class="text-sm text-gray-600 mb-3">لوحة تحكم تفاعلية لتحليل بيانات المبيعات</p>
+                                <div class="flex items-center justify-between">
+                                    <div class="flex items-center text-sm text-gray-500">
+                                        <i class="fas fa-calendar ml-2"></i>
+                                        <span>تسليم: 15 فبراير 2024</span>
+                                    </div>
+                                    <div class="w-32 bg-gray-200 rounded-full h-2">
+                                        <div class="bg-green-500 h-2 rounded-full" style="width: 65%"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="border rounded-lg p-4 hover:bg-gray-50 transition">
+                                <div class="flex items-center justify-between mb-2">
+                                    <h4 class="font-semibold">استراتيجية AI للشركة</h4>
+                                    <span class="bg-yellow-100 text-yellow-700 px-2 py-1 rounded text-xs">قيد المراجعة</span>
+                                </div>
+                                <p class="text-sm text-gray-600 mb-3">خطة متكاملة لتبني الذكاء الاصطناعي</p>
+                                <div class="flex items-center justify-between">
+                                    <div class="flex items-center text-sm text-gray-500">
+                                        <i class="fas fa-calendar ml-2"></i>
+                                        <span>تسليم: 20 فبراير 2024</span>
+                                    </div>
+                                    <div class="w-32 bg-gray-200 rounded-full h-2">
+                                        <div class="bg-yellow-500 h-2 rounded-full" style="width: 85%"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div>
+                        <h3 class="text-xl font-bold mb-6">الملفات المشتركة</h3>
+                        <div class="space-y-3">
+                            <div class="flex items-center justify-between p-3 border rounded-lg hover:bg-gray-50 transition">
+                                <div class="flex items-center">
+                                    <div class="bg-blue-100 p-2 rounded-lg ml-3">
+                                        <i class="fas fa-file-pdf text-blue-600"></i>
+                                    </div>
+                                    <div>
+                                        <p class="font-semibold text-sm">تقرير تحليلي.pdf</p>
+                                        <p class="text-xs text-gray-500">2.5 MB • 2 يوم مضى</p>
+                                    </div>
+                                </div>
+                                <button class="text-purple-600 hover:text-purple-700">
+                                    <i class="fas fa-download"></i>
+                                </button>
+                            </div>
+                            
+                            <div class="flex items-center justify-between p-3 border rounded-lg hover:bg-gray-50 transition">
+                                <div class="flex items-center">
+                                    <div class="bg-green-100 p-2 rounded-lg ml-3">
+                                        <i class="fas fa-file-excel text-green-600"></i>
+                                    </div>
+                                    <div>
+                                        <p class="font-semibold text-sm">بيانات المبيعات.xlsx</p>
+                                        <p class="text-xs text-gray-500">1.8 MB • 5 أيام مضت</p>
+                                    </div>
+                                </div>
+                                <button class="text-purple-600 hover:text-purple-700">
+                                    <i class="fas fa-download"></i>
+                                </button>
+                            </div>
+                            
+                            <div class="flex items-center justify-between p-3 border rounded-lg hover:bg-gray-50 transition">
+                                <div class="flex items-center">
+                                    <div class="bg-purple-100 p-2 rounded-lg ml-3">
+                                        <i class="fas fa-file-powerpoint text-purple-600"></i>
+                                    </div>
+                                    <div>
+                                        <p class="font-semibold text-sm">عرض المشروع.pptx</p>
+                                        <p class="text-xs text-gray-500">5.2 MB • أسبوع مضى</p>
+                                    </div>
+                                </div>
+                                <button class="text-purple-600 hover:text-purple-700">
+                                    <i class="fas fa-download"></i>
+                                </button>
+                            </div>
+                        </div>
+                        
+                        <div class="mt-6">
+                            <button class="w-full bg-purple-600 text-white py-3 rounded-lg hover:bg-purple-700 transition">
+                                <i class="fas fa-upload ml-2"></i>رفع ملف جديد
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Analytics Dashboard Section -->
+    <section id="analytics" class="py-20 px-4">
+        <div class="max-w-7xl mx-auto">
+            <h2 class="text-4xl font-bold text-center mb-16">
+                <span class="bg-gradient-to-r from-purple-600 to-pink-600 bg-clip-text text-transparent">لوحة التحليلات</span>
+            </h2>
+            
+            <div class="bg-white rounded-2xl shadow-xl p-8">
+                <!-- Analytics Header -->
+                <div class="flex items-center justify-between mb-8">
+                    <h3 class="text-xl font-bold">نظرة عامة على الأداء</h3>
+                    <div class="flex space-x-reverse space-x-3">
+                        <select class="px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-purple-500">
+                            <option>آخر 7 أيام</option>
+                            <option>آخر 30 يوم</option>
+                            <option>آخر 3 أشهر</option>
+                            <option>آخر سنة</option>
+                        </select>
+                        <button class="bg-purple-600 text-white px-4 py-2 rounded-lg hover:bg-purple-700 transition">
+                            <i class="fas fa-download ml-2"></i>تصدير التقرير
+                        </button>
+                    </div>
+                </div>
+                
+                <!-- Key Metrics -->
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mb-8">
+                    <div class="bg-gradient-to-r from-indigo-50 to-indigo-100 p-6 rounded-xl">
+                        <div class="flex items-center justify-between mb-2">
+                            <span class="text-sm text-indigo-600 font-semibold">زيارات الموقع</span>
+                            <i class="fas fa-users text-indigo-600"></i>
+                        </div>
+                        <div class="text-2xl font-bold text-indigo-900">12,543</div>
+                        <div class="text-sm text-indigo-600 mt-1">
+                            <i class="fas fa-arrow-up ml-1"></i>+12.5% من الأسبوع الماضي
+                        </div>
+                    </div>
+                    
+                    <div class="bg-gradient-to-r from-green-50 to-green-100 p-6 rounded-xl">
+                        <div class="flex items-center justify-between mb-2">
+                            <span class="text-sm text-green-600 font-semibold">العملاء الجدد</span>
+                            <i class="fas fa-user-plus text-green-600"></i>
+                        </div>
+                        <div class="text-2xl font-bold text-green-900">89</div>
+                        <div class="text-sm text-green-600 mt-1">
+                            <i class="fas fa-arrow-up ml-1"></i>+8.2% من الأسبوع الماضي
+                        </div>
+                    </div>
+                    
+                    <div class="bg-gradient-to-r from-purple-50 to-purple-100 p-6 rounded-xl">
+                        <div class="flex items-center justify-between mb-2">
+                            <span class="text-sm text-purple-600 font-semibold">معدل التحويل</span>
+                            <i class="fas fa-chart-line text-purple-600"></i>
+                        </div>
+                        <div class="text-2xl font-bold text-purple-900">3.8%</div>
+                        <div class="text-sm text-purple-600 mt-1">
+                            <i class="fas fa-arrow-up ml-1"></i>+0.5% من الأسبوع الماضي
+                        </div>
+                    </div>
+                    
+                    <div class="bg-gradient-to-r from-orange-50 to-orange-100 p-6 rounded-xl">
+                        <div class="flex items-center justify-between mb-2">
+                            <span class="text-sm text-orange-600 font-semibold">الإيرادات</span>
+                            <i class="fas fa-money-bill-wave text-orange-600"></i>
+                        </div>
+                        <div class="text-2xl font-bold text-orange-900">45,678 جنيه</div>
+                        <div class="text-sm text-orange-600 mt-1">
+                            <i class="fas fa-arrow-up ml-1"></i>+18.3% من الأسبوع الماضي
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Charts Section -->
+                <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
+                    <div>
+                        <h3 class="text-lg font-semibold mb-4">حركة الزيارات</h3>
+                        <div class="bg-gray-50 p-6 rounded-xl h-64 flex items-center justify-center">
+                            <div class="text-center text-gray-500">
+                                <i class="fas fa-chart-area text-4xl mb-4"></i>
+                                <p>مخطط حركة الزيارات</p>
+                                <p class="text-sm">يمكن دمج مكتبة مثل Chart.js لعرض البيانات</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div>
+                        <h3 class="text-lg font-semibold mb-4">الخدمات الأكثر طلباً</h3>
+                        <div class="bg-gray-50 p-6 rounded-xl h-64 flex items-center justify-center">
+                            <div class="text-center text-gray-500">
+                                <i class="fas fa-chart-pie text-4xl mb-4"></i>
+                                <p>مخطط توزيع الخدمات</p>
+                                <p class="text-sm">ورش العمل (35%) • استشارات (30%) • قوالب (20%) • تحليل (15%)</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Recent Activity -->
+                <div class="mt-8">
+                    <h3 class="text-lg font-semibold mb-4">النشاط الحديث</h3>
+                    <div class="space-y-3">
+                        <div class="flex items-center justify-between p-3 bg-gray-50 rounded-lg">
+                            <div class="flex items-center">
+                                <div class="bg-green-100 p-2 rounded-full ml-3">
+                                    <i class="fas fa-check text-green-600 text-sm"></i>
+                                </div>
+                                <div>
+                                    <p class="font-semibold text-sm">اكتمال مشروع: Dashboard تحليلي</p>
+                                    <p class="text-xs text-gray-500">منذ 2 ساعة</p>
+                                </div>
+                            </div>
+                            <span class="text-green-600 font-semibold">+8000 جنيه</span>
+                        </div>
+                        
+                        <div class="flex items-center justify-between p-3 bg-gray-50 rounded-lg">
+                            <div class="flex items-center">
+                                <div class="bg-blue-100 p-2 rounded-full ml-3">
+                                    <i class="fas fa-user text-blue-600 text-sm"></i>
+                                </div>
+                                <div>
+                                    <p class="font-semibold text-sm">عميل جديد: شركة النمو</p>
+                                    <p class="text-xs text-gray-500">منذ 5 ساعات</p>
+                                </div>
+                            </div>
+                            <span class="text-blue-600">استشارة مجانية</span>
+                        </div>
+                        
+                        <div class="flex items-center justify-between p-3 bg-gray-50 rounded-lg">
+                            <div class="flex items-center">
+                                <div class="bg-purple-100 p-2 rounded-full ml-3">
+                                    <i class="fas fa-calendar text-purple-600 text-sm"></i>
+                                </div>
+                                <div>
+                                    <p class="font-semibold text-sm">حجز موعد: ورشة عمل AI</p>
+                                    <p class="text-xs text-gray-500">منذ يوم</p>
+                                </div>
+                            </div>
+                            <span class="text-purple-600">15 فبراير</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-20 px-4">
+        <div class="max-w-7xl mx-auto">
+            <h2 class="text-4xl font-bold text-center mb-16">
+                <span class="bg-gradient-to-r from-purple-600 to-pink-600 bg-clip-text text-transparent">تواصل معنا</span>
+            </h2>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-12">
+                <div class="bg-white rounded-2xl shadow-xl p-8">
+                    <h3 class="text-2xl font-bold mb-6">معلومات التواصل</h3>
+                    <div class="space-y-4">
+                        <div class="flex items-center">
+                            <i class="fas fa-envelope text-purple-600 text-xl ml-4"></i>
+                            <div>
+                                <div class="font-semibold">البريد الإلكتروني</div>
+                                <div class="text-gray-600">engineermariam4@gmail.com</div>
+                            </div>
+                        </div>
+                        <div class="flex items-center">
+                            <i class="fab fa-instagram text-purple-600 text-xl ml-4"></i>
+                            <div>
+                                <div class="font-semibold">انستجرام</div>
+                                <a href="https://www.instagram.com/mariam_ai1365?igsh=bm10emN2NTVzM3Vy" target="_blank" class="text-purple-600 hover:underline">@mariam_ai1365</a>
+                            </div>
+                        </div>
+                        <div class="flex items-center">
+                            <i class="fas fa-credit-card text-purple-600 text-xl ml-4"></i>
+                            <div>
+                                <div class="font-semibold">الدفع عبر InstaPay</div>
+                                <a href="https://ipn.eg/S/eslambaidoun/instapay/6uklK5" target="_blank" class="text-purple-600 hover:underline">رابط الدفع</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="bg-white rounded-2xl shadow-xl p-8">
+                    <h3 class="text-2xl font-bold mb-6">أرسل رسالة</h3>
+                    <form id="contactForm" class="space-y-4">
+                        <input type="text" placeholder="الاسم الكامل" required
+                               class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-purple-500">
+                        <input type="email" placeholder="البريد الإلكتروني" required
+                               class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-purple-500">
+                        <select class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-purple-500">
+                            <option value="">اختر الخدمة</option>
+                            <option value="workshop">ورش عمل AI</option>
+                            <option value="consulting">استشارات AI</option>
+                            <option value="templates">قوالب بوربوينت</option>
+                            <option value="analysis">تحليل بيانات</option>
+                            <option value="programming">تصميم برامج</option>
+                        </select>
+                        <textarea placeholder="رسالتك" rows="4" required
+                                  class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-purple-500"></textarea>
+                        <button type="submit" class="w-full bg-gradient-to-r from-purple-600 to-pink-600 text-white py-3 rounded-lg hover:shadow-lg transition">
+                            <i class="fas fa-paper-plane ml-2"></i>إرسال الرسالة
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Reviews Section -->
+    <section id="reviews" class="py-20 px-4 bg-white bg-opacity-50">
+        <div class="max-w-7xl mx-auto">
+            <h2 class="text-4xl font-bold text-center mb-16">
+                <span class="bg-gradient-to-r from-purple-600 to-pink-600 bg-clip-text text-transparent">تقييمات العملاء</span>
+            </h2>
+            
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mb-12">
+                <div class="bg-white rounded-xl shadow-lg p-6">
+                    <div class="flex items-center mb-4">
+                        <div class="bg-purple-100 p-3 rounded-full ml-3">
+                            <i class="fas fa-user text-purple-600"></i>
+                        </div>
+                        <div>
+                            <div class="font-semibold">أحمد محمد</div>
+                            <div class="text-yellow-500">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="text-gray-600">خدمة ممتازة ورش عمل عالية الجودة. أوصي بشدة!</p>
+                </div>
+                
+                <div class="bg-white rounded-xl shadow-lg p-6">
+                    <div class="flex items-center mb-4">
+                        <div class="bg-pink-100 p-3 rounded-full ml-3">
+                            <i class="fas fa-user text-pink-600"></i>
+                        </div>
+                        <div>
+                            <div class="font-semibold">سارة أحمد</div>
+                            <div class="text-yellow-500">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="text-gray-600">قوالب بوربوينت احترافية جداً ووفرت علي الكثير من الوقت.</p>
+                </div>
+                
+                <div class="bg-white rounded-xl shadow-lg p-6">
+                    <div class="flex items-center mb-4">
+                        <div class="bg-blue-100 p-3 rounded-full ml-3">
+                            <i class="fas fa-user text-blue-600"></i>
+                        </div>
+                        <div>
+                            <div class="font-semibold">محمود حسن</div>
+                            <div class="text-yellow-500">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star-half-alt"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="text-gray-600">استشارات AI ساعدت في تطوير أعمالنا بشكل كبير.</p>
+                </div>
+            </div>
+            
+            <!-- Add Review -->
+            <div class="bg-white rounded-2xl shadow-xl p-8 max-w-2xl mx-auto">
+                <h3 class="text-2xl font-bold mb-6">أضف تقييمك</h3>
+                <form id="reviewForm" class="space-y-4">
+                    <input type="text" placeholder="اسمك" required
+                           class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-purple-500">
+                    <div class="flex items-center space-x-reverse space-x-2">
+                        <span class="font-semibold">التقييم:</span>
+                        <div id="starRating" class="flex space-x-reverse space-x-1">
+                            <i class="fas fa-star text-2xl text-gray-300 cursor-pointer hover:text-yellow-500" data-rating="1"></i>
+                            <i class="fas fa-star text-2xl text-gray-300 cursor-pointer hover:text-yellow-500" data-rating="2"></i>
+                            <i class="fas fa-star text-2xl text-gray-300 cursor-pointer hover:text-yellow-500" data-rating="3"></i>
+                            <i class="fas fa-star text-2xl text-gray-300 cursor-pointer hover:text-yellow-500" data-rating="4"></i>
+                            <i class="fas fa-star text-2xl text-gray-300 cursor-pointer hover:text-yellow-500" data-rating="5"></i>
+                        </div>
+                    </div>
+                    <textarea placeholder="اكتب تقييمك..." rows="3" required
+                              class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-purple-500"></textarea>
+                    <button type="submit" class="w-full bg-gradient-to-r from-purple-600 to-pink-600 text-white py-3 rounded-lg hover:shadow-lg transition">
+                        <i class="fas fa-star ml-2"></i>إضافة التقييم
+                    </button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Complaint Section -->
+    <section class="py-20 px-4">
+        <div class="max-w-4xl mx-auto">
+            <div class="bg-gradient-to-r from-red-50 to-orange-50 rounded-2xl shadow-xl p-8">
+                <h3 class="text-2xl font-bold mb-6 text-center">
+                    <i class="fas fa-exclamation-triangle text-orange-500 ml-2"></i>
+                    صندوق الشكاوى والمقترحات
+                </h3>
+                <p class="text-gray-600 text-center mb-8">نحن نقدر رأيك ونسعى لتقديم أفضل خدمة ممكنة</p>
+                <form id="complaintForm" class="space-y-4">
+                    <input type="text" placeholder="الاسم الكامل" required
+                           class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-orange-500">
+                    <input type="email" placeholder="البريد الإلكتروني" required
+                           class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-orange-500">
+                    <select class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-orange-500">
+                        <option value="">اختر النوع</option>
+                        <option value="complaint">شكوى</option>
+                        <option value="suggestion">اقتراح</option>
+                        <option value="inquiry">استفسار</option>
+                    </select>
+                    <textarea placeholder="تفاصيل الشكوى أو الاقتراح..." rows="4" required
+                              class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-orange-500"></textarea>
+                    <button type="submit" class="w-full bg-gradient-to-r from-orange-500 to-red-500 text-white py-3 rounded-lg hover:shadow-lg transition">
+                        <i class="fas fa-paper-plane ml-2"></i>إرسال
+                    </button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- AI Chat Assistant Widget -->
+    <div id="chatWidget" class="fixed bottom-6 left-6 z-50">
+        <button id="chatToggle" class="bg-gradient-to-r from-purple-600 to-pink-600 text-white p-4 rounded-full shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-110">
+            <i class="fas fa-comments text-xl"></i>
+            <span class="absolute -top-1 -right-1 bg-red-500 text-white text-xs rounded-full w-5 h-5 flex items-center justify-center pulse">1</span>
+        </button>
+        
+        <div id="chatBox" class="hidden absolute bottom-20 left-0 w-96 bg-white rounded-2xl shadow-2xl overflow-hidden">
+            <div class="bg-gradient-to-r from-purple-600 to-pink-600 text-white p-4">
+                <div class="flex items-center justify-between">
+                    <div class="flex items-center">
+                        <div class="bg-white bg-opacity-20 p-2 rounded-full ml-3">
+                            <i class="fas fa-robot text-lg"></i>
+                        </div>
+                        <div>
+                            <h4 class="font-bold">مساعد AI</h4>
+                            <p class="text-xs opacity-90">متصل الآن</p>
+                        </div>
+                    </div>
+                    <button id="chatClose" class="text-white hover:bg-white hover:bg-opacity-20 p-2 rounded-full transition">
+                        <i class="fas fa-times"></i>
+                    </button>
+                </div>
+            </div>
+            
+            <div id="chatMessages" class="h-96 overflow-y-auto p-4 space-y-3">
+                <div class="flex items-start">
+                    <div class="bg-purple-100 p-2 rounded-full ml-3">
+                        <i class="fas fa-robot text-purple-600 text-sm"></i>
+                    </div>
+                    <div class="bg-gray-100 rounded-2xl rounded-tl-none p-3 max-w-xs">
+                        <p class="text-sm">مرحباً! أنا مساعد الذكاء الاصطناعي في Mariam AI. كيف يمكنني مساعدتك اليوم؟</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="border-t p-4">
+                <div class="flex space-x-reverse space-x-2">
+                    <input id="chatInput" type="text" placeholder="اكتب رسالتك..." 
+                           class="flex-1 px-3 py-2 border border-gray-300 rounded-full focus:outline-none focus:ring-2 focus:ring-purple-500 text-sm">
+                    <button id="chatSend" class="bg-gradient-to-r from-purple-600 to-pink-600 text-white p-2 rounded-full hover:shadow-lg transition">
+                        <i class="fas fa-paper-plane"></i>
+                    </button>
+                </div>
+                <div class="mt-2 flex flex-wrap gap-1">
+                    <button class="quick-reply bg-gray-100 text-gray-700 px-3 py-1 rounded-full text-xs hover:bg-purple-100 hover:text-purple-700 transition">الأسعار</button>
+                    <button class="quick-reply bg-gray-100 text-gray-700 px-3 py-1 rounded-full text-xs hover:bg-purple-100 hover:text-purple-700 transition">ورش العمل</button>
+                    <button class="quick-reply bg-gray-100 text-gray-700 px-3 py-1 rounded-full text-xs hover:bg-purple-100 hover:text-purple-700 transition">استشارات</button>
+                    <button class="quick-reply bg-gray-100 text-gray-700 px-3 py-1 rounded-full text-xs hover:bg-purple-100 hover:text-purple-700 transition">تواصل</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-12 px-4">
+        <div class="max-w-7xl mx-auto text-center">
+            <div class="flex justify-center items-center space-x-reverse space-x-3 mb-6">
+                <div class="bg-gradient-to-r from-purple-600 to-pink-600 p-3 rounded-lg">
+                    <i class="fas fa-brain text-white text-xl"></i>
+                </div>
+                <h3 class="text-2xl font-bold">Mariam AI</h3>
+            </div>
+            <p class="text-gray-400 mb-6">حلول الذكاء الاصطناعي المبتكرة لمستقبل أعمالك</p>
+            <div class="flex justify-center space-x-reverse space-x-6 mb-8">
+                <a href="mailto:engineermariam4@gmail.com" class="text-gray-400 hover:text-white transition">
+                    <i class="fas fa-envelope text-xl"></i>
+                </a>
+                <a href="https://www.instagram.com/mariam_ai1365?igsh=bm10emN2NTVzM3Vy" target="_blank" class="text-gray-400 hover:text-white transition">
+                    <i class="fab fa-instagram text-xl"></i>
+                </a>
+                <a href="https://ipn.eg/S/eslambaidoun/instapay/6uklK5" target="_blank" class="text-gray-400 hover:text-white transition">
+                    <i class="fas fa-credit-card text-xl"></i>
+                </a>
+            </div>
+            <div class="border-t border-gray-800 pt-6">
+                <p class="text-gray-500">© 2024 Mariam AI. جميع الحقوق محفوظة.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

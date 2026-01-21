@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mariam AI - تشغيل سريع</title>
+    <style>
+        body {
+            font-family: 'Cairo', sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0;
+            padding: 20px;
+        }
+        .container {
+            background: white;
+            border-radius: 20px;
+            padding: 40px;
+            box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+            text-align: center;
+            max-width: 500px;
+        }
+        .icon {
+            font-size: 60px;
+            color: #667eea;
+            margin-bottom: 20px;
+        }
+        h1 {
+            color: #333;
+            margin-bottom: 20px;
+        }
+        .btn {
+            display: inline-block;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 15px 30px;
+            text-decoration: none;
+            border-radius: 10px;
+            margin: 10px;
+            transition: transform 0.3s;
+        }
+        .btn:hover {
+            transform: translateY(-2px);
+        }
+        .instructions {
+            background: #f8f9fa;
+            padding: 20px;
+            border-radius: 10px;
+            margin: 20px 0;
+            text-align: right;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="icon">🤖</div>
+        <h1>Mariam AI</h1>
+        <p>منصة حلول الذكاء الاصطناعي المتقدمة</p>
+        
+        <div class="instructions">
+            <h3>طرق التشغيل:</h3>
+            <p><strong>1. الطريقة المباشرة:</strong></p>
+            <a href="index.html" class="btn">فتح الموقع مباشرة</a>
+            
+            <p><strong>2. نسخ الرابط:</strong></p>
+            <button onclick="copyLink()" class="btn">نسخ مسار الملف</button>
+            
+            <p><strong>3. فتح يدوي:</strong></p>
+            <p>انسخ المسار التالي وضعه في المتصفح:</p>
+            <code id="filePath"></code>
+        </div>
+        
+        <p><small>إذا لم يعمل، حمل الملفات على جهاز به مساحة خالية</small></p>
+    </div>
+
+    <script>
+        // Get current file path
+        const currentPath = window.location.pathname;
+        const fullPath = currentPath.replace('run.html', 'index.html');
+        document.getElementById('filePath').textContent = fullPath;
+        
+        function copyLink() {
+            const text = document.getElementById('filePath').textContent;
+            navigator.clipboard.writeText(text).then(() => {
+                alert('تم نسخ المسار! الصقه في المتصفح.');
+            });
+        }
+    </script>
+</body>
+</html>
